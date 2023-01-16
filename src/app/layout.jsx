@@ -1,6 +1,7 @@
 
 import Header from '@/components/Header'
 import './globals.css'
+import HomeHeader from '@/components/HomeHeader'
 // import "./output.css";
 
 export default function RootLayout({ children }) {
@@ -9,6 +10,7 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <Header />
+        <HomeHeader />
         <>
         {children}
         </>
