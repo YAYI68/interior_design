@@ -27,7 +27,6 @@ export default function Home() {
       <div className='w-[70%]'>
        <HomeArticle />
        <HomeContact />
-       <Footer />
       </div>
     </main>
   )
