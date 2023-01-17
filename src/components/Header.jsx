@@ -1,22 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
-import { DM_Serif_Display } from '@next/font/google'
 import Link from 'next/link'
 import { CiSearch } from "react-icons/ci";
+import InteriorLogo from './InteriorLogo';
 
-const Dm_Serif = DM_Serif_Display({
-  subsets: ['latin'],
-  weight: '400',
-})
+
 
 export default function Header() {
   return (
     <header className="h-[6.25rem] w-full flex items-center justify-center ">
         <nav className='w-[70%] h-[60%]  flex items-center justify-between'>
-          <div id="logo" className='w-[20%] flex items-center gap-2'>
-             <Image src={'/images/Logo.png'} width={34} height={34} alt="logo" />
-             <p className='text-[40px] ' style={Dm_Serif.style}>Interno</p>
-          </div>
+          <InteriorLogo />
           <ul className='w-[45%] h-[50%] flex items-center gap-4'>
              <li>
               <Link href={'/'} className='text-[1.2rem] font-[400] text-center'>Home</Link>
